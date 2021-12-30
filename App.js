@@ -1,7 +1,11 @@
 import React from 'react';
+
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';//no html or css we need to use react component
 import { ScrollView } from 'react-native-web';
+// import React, { useState } from "react";
+import { Button } from "react-native";
+
 
 export default function App() {
   console.log("app executed");//only use for  devolepment and testing performance issue
@@ -11,7 +15,7 @@ export default function App() {
       <Text>Hello World</Text>
       <ScrollView>
         <view>
-        <text>Registration Form</text>
+        <text style={styles.sectionTitle}>Registration Form</text>
         <Image
           source={{uri: "https://reactnative.dev/docs/assets/p_cat1.png"}}style={{ width: 200, height: 200 }}
           />
@@ -42,6 +46,9 @@ export default function App() {
         }}
         defaultValue="password"
       />
+     <Button 
+        title="Sign in "
+      />
       </ScrollView>
       <StatusBar style="auto" />
     </View>
@@ -51,7 +58,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#E8EAD',
     alignItems: 'center',
     justifyContent: 'center',
   },
