@@ -9,6 +9,7 @@ export default function TabRouter() {
 	<Tabs.Navigator>
 	  <Tabs.Screen name="Home" component={HomeScreen} />
 	  <Tabs.Screen name="About" component={AboutScreen} />
-	</Tabs.Navigator>
+	  <Tabs.Screen name="new" component={AboutScreen} />
+	  </Tabs.Navigator>
   );
 }

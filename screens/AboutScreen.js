@@ -4,7 +4,7 @@ export default function AboutScreen({navigation}) {
   return (
 	<View style={styles.container}>
 	  <View style={{flex: 1, justifyContent: 'center', alignItems: 'stretch'}}>
-		<Text style={styles.text}>In About Screen</Text>
+		<Text style={styles.text1}>About</Text>
 		<Text style={styles.text}>Navigation with Navigate methods</Text>
 		<View
 		  style={{
@@ -32,7 +32,8 @@ export default function AboutScreen({navigation}) {
 		<Button
 		  style={styles.button}
 		  title="Visit About again"
-		  onPress={() => navigation.push('About')} // will not work in Tab
+		  disabled
+		  onPress={() => navigation.push("HomeScreen")} // will not work in Tab
 		/>
 		<Button
 		  style={styles.button}
@@ -44,12 +45,19 @@ export default function AboutScreen({navigation}) {
   );
 }
 const styles = StyleSheet.create({
-  container: {flex: 1, justifyContent: 'space-around', alignItems: 'center'},
+  container: {flex: 1, justifyContent: 'center' , alignItems: 'center'},
   text: {
 	fontSize: 18,
+	fontWeight: 20,
+	padding: 10,
+  },
+   text1: {
+	fontSize: 18,
+	fontWeight: 50,
 	padding: 10,
   },
   button: {
 	margin: 2,
+	padding:10
   },
 });

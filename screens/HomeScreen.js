@@ -29,6 +29,7 @@ export default function HomeScreen() {
           <text style={{
             flex: 2,
             textAlign: 'top',
+            padding:15,
             flexDirection: 0,
             fontSize:20,
             fontFamily: 'Montserrat',
@@ -41,6 +42,7 @@ export default function HomeScreen() {
           <TextInput
         style={{
           height: 40,
+          alignItems:'flex-end',
           borderColor: 'gray',
           borderWidth: 1
         }}
@@ -52,8 +54,10 @@ export default function HomeScreen() {
        <Text>your {email} id is acceptable</Text> */}
       <text style={{
         fontSize:20,
+        padding:15,
         fontFamily: 'Montserrat',
         fontWeight:'bold',
+        alignItems:'flex-end',
           height: 40,
           borderColor: 'gray',
           borderWidth: 1
@@ -61,6 +65,8 @@ export default function HomeScreen() {
       <TextInput
         style={{
           height: 40,
+        
+          alignItems: 'flex-end',
           borderColor: 'gray',
           borderWidth: 1
         }}
@@ -68,7 +74,8 @@ export default function HomeScreen() {
         //  defaultValue={password}
          onChangetext = {password => setPassword(password)}
       />
-     <Button 
+     <Button style={{padding:20, margin:2,borderWidth:5}
+     }
         title="Sign in "
       />
       </ScrollView> {/* the scroll view is used to make the view scroll vertical or horizontal */}
