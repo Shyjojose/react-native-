@@ -4,8 +4,9 @@ export default function AboutScreen({navigation}) {
   return (
 	<View style={styles.container}>
 	  <View style={{flex: 1, justifyContent: 'center', alignItems: 'stretch'}}>
-		<Text style={styles.text1}>About</Text>
-		<Text style={styles.text}>Navigation with Navigate methods</Text>
+		<Text style={styles.text}>A COVID-19 vaccine might:Prevent you from getting COVID-19 or from becoming seriously ill or dying due to COVID-19
+Prevent you from spreading the virus that causes COVID-19 to others Add to the number of people in the community who are protected from getting COVID-19 — making it harder for the disease to spread and contributing to herd immunity
+Prevent the virus that causes COVID-19 from spreading and replicating, which allows it to mutate and possibly become more resistant to vaccines</Text>
 		<View
 		  style={{
 			flex: 1,
@@ -25,21 +26,6 @@ export default function AboutScreen({navigation}) {
 			// programmatically go back by calling navigation.goBack()
 		  />
 		</View>
-	  </View>
-	  <View
-		style={{flex: 1, justifyContent: 'flex-start', alignItems: 'stretch'}}>
-		<Text style={styles.text}>Navigation with push/pop methods</Text>
-		<Button
-		  style={styles.button}
-		  title="Visit About again"
-		  disabled
-		  onPress={() => navigation.push("HomeScreen")} // will not work in Tab
-		/>
-		<Button
-		  style={styles.button}
-		  title="Visit first screen in stack"
-		  onPress={() => navigation.popToTop()} // will not work in Tab
-		/>
 	  </View>
 	</View>
   );

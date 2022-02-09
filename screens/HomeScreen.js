@@ -15,15 +15,15 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={{flex: 1}}>
     <View style={styles.container}>
-      <Text>Hello World</Text>
+      
       
       <ScrollView>
         <view>
         <text style={{fontSize:20,
             fontFamily: 'Montserrat',
-            fontWeight:'bold'}}>Registration Form</text>
+            fontWeight:'bold'}}>Covid Vaccine Login</text>
         <Image
-          source={{uri: "https://reactnative.dev/docs/assets/p_cat1.png"}}style={{ width: 200, height: 200 }}
+          source={{uri: "https://www.uq.edu.au/news/filething/get-styled/large/240559/AdobeStock_220120304%20vaccine%20SMALL.jpg?itok=4jGIVceh"}}style={{ width: 200, height: 200 }}
           />
           </view>
           <text style={{
@@ -64,6 +64,7 @@ export default function HomeScreen() {
         }}>Password</text>
       <TextInput
         style={{
+          
           height: 40,
         
           alignItems: 'flex-end',
@@ -74,9 +75,17 @@ export default function HomeScreen() {
         //  defaultValue={password}
          onChangetext = {password => setPassword(password)}
       />
-     <Button style={{padding:20, margin:2,borderWidth:5}
+      <View style={styles.space}/>
+     <Button style={{padding:20, marginBottom:20,borderWidth:5}
      }
-        title="Sign in "
+        title=
+        "Sign in "
+      />
+      <View style={styles.space}/>
+       <Button style={{padding:20, marginBottom:20,borderWidth:5}
+     }
+        title=
+        "Register"
       />
       </ScrollView> {/* the scroll view is used to make the view scroll vertical or horizontal */}
       <StatusBar style="auto" />
@@ -93,4 +102,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  space:{
+    width: 20,
+    height:20
+  }
 });
+
